@@ -1,0 +1,28 @@
+1.
+select sum(purch_amt) from orders;
+
+2.
+select avg(purch_amt) from orders;
+3.
+select count(distinct salesman_id) from orders;
+4.
+select count(cust_name) from customer;
+5.
+select count(cust_name) from customer;
+6.
+select max(purch_amt) from orders;
+7.
+select min(purch_amt) from orders;
+8.
+select city,max(grade) from customer
+group by city
+order by city desc;
+9.
+select customer_id,max(purch_amt) from orders
+group by customer_id;
+
+10.
+select customer_id,ord_date,max(purch_amt)
+from orders
+group by customer_id,ord_date;
+
